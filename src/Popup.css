@@ -1,0 +1,44 @@
+/* Popup Overlay Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Close Button Styles */
+  button {
+    cursor: pointer;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Close Button Hover Styles */
+  button:hover {
+    background: #0056b3;
+  }
+  

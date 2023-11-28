@@ -1,0 +1,60 @@
+
+
+.content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh; 
+}
+
+
+.content .flex {
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+.vertical-footer {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+  background: linear-gradient(to right, rgb(201, 179, 6), gray); 
+
+ 
+}
+
+.social-links {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  
+  margin-right: 10px; 
+}
+
+.social-links img {
+  
+  width: 40px; 
+  height: 40px; 
+}
+.text-gradient {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #0d0d0d, #968e8e);
+}
+
+
+/* ... (your existing styles) */

@@ -1,0 +1,150 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>RR HOUSING SERVICES</title>
+     <style>
+         body {
+             margin: 0;
+             font-family: Arial, sans-serif;
+             overflow-x: hidden;
+             background-image: url('./admins.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+         }
+ 
+         header {
+             /* background-color: #461c9f; */
+             color: #fff;
+             padding: 16px;
+             text-align: center;
+             font-size: 25px;
+             font-style: italic;
+         }
+ 
+         header h1 {
+             background: linear-gradient(to right, #dde546, #f6f3f3);
+             -webkit-background-clip: text;
+             color: transparent;
+             font-family: Cursive, Lucida Handwriting;
+             font-size: 4em;
+         }
+ 
+         nav {
+             font-size: 20px;
+             width: 180px;
+             height: 100%;
+             background-color: #1a202c;
+             position: fixed;
+             top: 0;
+             left: -180px;
+             overflow-y: auto;
+             padding-top: 20px;
+             transition: left 0.3s;
+         }
+ 
+         nav a {
+             display: block;
+             text-decoration: none;
+             color: white;
+             background-color: #333;
+             height: 70px;
+             padding-top: 20px;
+             padding-left: 20px;
+         }
+ 
+         nav a:hover {
+             background-color: #4a5568;
+         }
+ 
+         main {
+             margin-left: 200px;
+             padding: 20px;
+             overflow-y: auto;
+             display: flex;
+             flex-wrap: wrap;
+         }
+ 
+         table {
+             width: calc(50% - 20px);
+             margin: 10px;
+             border-collapse: collapse;
+         }
+ 
+         table,
+         th,
+         td {
+             border: 1px solid #ddd;
+         }
+ 
+         th,
+         td {
+             padding: 15px;
+             text-align: left;
+         }
+ 
+         #myid {
+             font-size: 50px;
+             font-family: Cursive, Lucida Handwriting;
+             font-style: italic;
+             padding-left: 20%;
+             color: rgb(238, 234, 234);
+         }
+ 
+         #myid2 {
+             margin-left: 15px;
+             padding: 5px;
+             font-size: 30px;
+             text-align: center;
+             color: white;
+         }
+ 
+         #hamburger {
+             font-size: 30px;
+             color: white;
+             cursor: pointer;
+             position: fixed;
+             top: 20px;
+             left: 20px;
+             z-index: 2;
+         }
+     </style>
+ </head>
+ 
+ <body>
+ 
+     <header>
+         <span id="hamburger">&#9776;</span>
+         <h1>RR HOUSING SERVICES</h1>
+     </header>
+     
+     <nav id="myNav">
+         <p id="myid2">Admin Section</p>
+         <a href="Adminhome.html">Home</a>
+         <a href="tenantdetails.php">Tenant Details</a>
+         <a href="maintenance.php">Maintenance</a>
+         <a href="update.php">Update Status</a>
+        
+     </nav>
+ 
+     <p id="myid"> A House is a home <br>where it shelters the<br> body and comforts <br>the soul.......!!!</p>
+ 
+     <script>
+         document.getElementById("hamburger").addEventListener("click", function () {
+             var nav = document.getElementById("myNav");
+             if (nav.style.left === "0px") {
+                 nav.style.left = "-180px";
+             } else {
+                 nav.style.left = "0px";
+             }
+         });
+     </script>
+ 
+ </body>
+ 
+ </html>
+ 
